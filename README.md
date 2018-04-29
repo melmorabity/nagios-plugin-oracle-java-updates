@@ -47,5 +47,3 @@ Path to the Oracle Java installation directory.
 ## Notes
 
 This Nagios plugin relies on the [web service](https://java.com/applet/javaLatestVersion.xml) used by the Java browser applet on https://www.java.com/en/download/installed.jsp to check installed Java version.
-
-Since Java 9 doesn't provide Java browser plugin anymore, this version is not supported by the plugin.

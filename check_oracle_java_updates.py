@@ -28,8 +28,8 @@ from pynag import Plugins
 
 
 _JAVA_VERSION_RE = re.compile(
-    r'java version "(?P<version>(?P<major_version>.+?)(?:_.+?)?)"\n'
-    r'Java\(TM\) (?:SE Runtime Environment|2 Runtime Environment, Standard Edition) '
+    r'^java version "(?P<version>(?P<major_version>1\.[45678]\.0|[0-9]+?)[_\.].*?)".*?\n'
+    r'Java\(TM\) (?:SE Runtime Environment|2 Runtime Environment, Standard Edition).*? '
     r'\(build (?P<build>.+?)\)$', re.MULTILINE
 )
 _JAVA_UPDATE_URL = 'https://www.java.com/applet/javaLatestVersion.xml'
